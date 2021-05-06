@@ -1,0 +1,25 @@
+<table class="table table-stripped">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Price</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of CompanyList">
+            <td>{{dataItem.symbol}}</td>
+            <td>{{dataItem.price}}</td>
+            <td>{{dataItem.date}}</td>
+            <td>
+                <button type="button" class="btn btn-light mr-1">
+                    Edit
+                </button>
+                <button type="button" class="btn btn-light mr-1">
+                    Delete
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
