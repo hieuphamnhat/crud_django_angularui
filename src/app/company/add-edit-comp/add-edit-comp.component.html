@@ -1,1 +1,26 @@
-<p>add-edit-comp works!</p>
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">Company Symbol </label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)] = "symbol" placeholder="Enter the symbol company">
+    </div>
+    
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <button (click)="addCompany()"  class="btn btn-primary">
+            Add
+        </button>
+    </div>
+    <div class="col-6">
+      
+    </div>
+    <div class="col">
+        <button (click)="editCompany()"  class="btn btn-primary">
+            Update
+        </button>
+    </div>
+  </div>
+</div>
+
